@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Главная</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20220714191443">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js?_v=20220714191443" referrerpolicy="no-referrer"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js?_v=20220714191443"></script>
+</head>
+
+<body>
+	<div class="container">
+		<div class="container__logIn logIn">
+			<a href="#" class="logIn__logo"><img src="img/logo.svg" alt="">PELIO</a>
+			<input type="text" class="logIn__login input" placeholder="Login">
+			<input type="password" class="logIn__password input" placeholder="Password">
+			<p class="login__p"></p>
+			<div class="logIn__buttons">
+				<button class="logIn__log">Log IN</button>
+				<button class="logIn__reg">Haven`t registerd yet?</button>
+			</div>
+		</div>
+		<div class="container__register register">
+			<a href="#" class="logIn__logo"><img src="img/logo.svg" alt="">PELIO</a>
+			<input type="text" class="register__login input" placeholder="Login">
+			<input type="password" class="register__password input" placeholder="Password">
+			<input type="email" class="register__email input" placeholder="Email">
+			<input type="text" class="register__nick input" placeholder="Nick">
+			<p class="register__p"></p>
+			<div class="register__buttons">
+				<button class="register__reg">Sing Up</button>
+				<button class="register__log">Already have an account?</button>
+			</div>
+		</div>
+	</div>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__menu menu">
+					<a href="#" data-da=".mobile-navigation , 768 , 2" class="header__logo"><img src="img/logo.svg" alt="">PELIO</a>
+
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<div class="menu__active-bar"></div>
+							<li class="menu__item"><a href="#" class="menu__link _icon-home _active">Dashboard</a></li>
+							<li class="menu__item"><a href="#" class="menu__link _icon-wallet">My Wallet</a></li>
+							<li class="menu__item"><a href="#" class="menu__link _icon-payment">Payment</a></li>
+							<li class="menu__item"><a href="#" class="menu__link _icon-invoince">Invoice</a></li>
+							<li class="menu__item"><a href="#" class="menu__link _icon-settings">Setting</a></li>
+							<li class="menu__item"><a href="#" class="menu__link _icon-transactions">Transactions</a></li>
+						</ul>
+					</nav>
+					<p class="menu__inform">Payment Admin Dashboard <br>© 2010-2021 All rights reserved. <br>Made by ❤️ Md Shamim Hossain</p>
+				</div>
+			</div>
+		</header>
+		<div class="mobile-navigation">
+			<button type="button" class="menu__icon icon-menu"><span></span></button>
+
+		</div>
+		<main class="page">
+
+			<div class="page__header header-page">
+				<picture><source srcset="img/page-logo.webp" type="image/webp"><img src="img/page-logo.png" alt="" class="header-page__logo"></picture>
+				<input type="text" class="header-page__input" placeholder="Search Here...">
+				<div class="header-page__notifications _icon-noti"></div>
+				<div class="header-page__email _icon-email"></div>
+				<div class="header-page__profile profile-page">
+					<div data-da=".mobile-navigation , 768 , 2" class="profile-page__img"></div>
+					<p class="profile-page__name">Hi Shamim</p>
+					<p class="profile-page__email">engshamim@gmail.com</p>
+					<p class="profile-page__arrow-down _icon-arrow-bottom"></p>
+				</div>
+			</div>
+			<div class="page__invoices invoices-page">
+				<div class="invoices-page__total">
+					<div class="invoices-page__img _icon-invoince"></div>
+					<h1 class="invoices-page__h1">32,568</h1>
+					<p class="invoices-page__p">Total Invoices</p>
+				</div>
+				<div class="invoices-page__paid">
+					<div class="invoices-page__img _icon-sucsess"></div>
+					<h1 class="invoices-page__h1">8,558</h1>
+					<p class="invoices-page__p">Paid Invoices</p>
+				</div>
+				<div class="invoices-page__unpaid">
+					<div class="invoices-page__img _icon-no"></div>
+					<h1 class="invoices-page__h1">2,568</h1>
+					<p class="invoices-page__p">Unpaid Invoices</p>
+				</div>
+				<div class="invoices-page__sent">
+					<div class="invoices-page__img _icon-invoince2"></div>
+					<h1 class="invoices-page__h1">668</h1>
+					<p class="invoices-page__p">Total Invoices sent</p>
+				</div>
+			</div>
+			<div class="page__transactions transactions-page">
+
+				<!-- Оболочка слайдера -->
+				<div class="transactions-page__slider swiper">
+					<!-- Двигающееся часть слайдера -->
+					<h1 class="transactions-page__title">Latest Transactions</h1>
+					<div class="transactions-page__wrapper swiper-wrapper">
+						<!-- Слайд -->
+						<div class="transactions-page__slide swiper-slide">
+							<div class="swiper-slide__transaction transactions">
+								<div class="transaction">
+									<div class="transactions__grid">
+										<p class="_icon-moneylist"></p>
+										<h1 class="transactions-grid__title">Amount</h1>
+										<p class="transactions-grid-sub-title">12,658$</p>
+									</div>
+									<p class="transactions__time">5 min ago</p>
+									<p class="_icon-printer"></p>
+									<p class="_icon-more"></p>
+								</div>
+								<div class="transaction">
+									<div class="transactions__grid">
+										<p class="_icon-moneylist"></p>
+										<h1 class="transactions-grid__title">Amount</h1>
+										<p class="transactions-grid-sub-title">12,658$</p>
+									</div>
+									<p class="transactions__time">5 min ago</p>
+									<p class="_icon-printer"></p>
+									<p class="_icon-more"></p>
+								</div>
+								<div class="transaction">
+									<div class="transactions__grid">
+										<p class="_icon-moneylist"></p>
+										<h1 class="transactions-grid__title">Amount</h1>
+										<p class="transactions-grid-sub-title">12,658$</p>
+									</div>
+									<p class="transactions__time">5 min ago</p>
+									<p class="_icon-printer"></p>
+									<p class="_icon-more"></p>
+								</div>
+								<div class="transaction">
+									<div class="transactions__grid">
+										<p class="_icon-moneylist"></p>
+										<h1 class="transactions-grid__title">Amount</h1>
+										<p class="transactions-grid-sub-title">12,658$</p>
+									</div>
+									<p class="transactions__time">5 min ago</p>
+									<p class="_icon-printer"></p>
+									<p class="_icon-more"></p>
+								</div>
+							</div>
+						</div>
+						<div class="transactions-page__slide swiper-slide">
+							<div class="swiper-slide__transaction transactions">
+								<div class="transaction">
+									<div class="transactions__grid">
+										<p class="_icon-moneylist"></p>
+										<h1 class="transactions-grid__title">Amount</h1>
+										<p class="transactions-grid-sub-title">12,658$</p>
+									</div>
+									<p class="transactions__time">5 min ago</p>
+									<p class="_icon-printer"></p>
+									<p class="_icon-more"></p>
+								</div>
+								<div class="transaction">
+									<div class="transactions__grid">
+										<p class="_icon-moneylist"></p>
+										<h1 class="transactions-grid__title">Amount</h1>
+										<p class="transactions-grid-sub-title">12,658$</p>
+									</div>
+									<p class="transactions__time">5 min ago</p>
+									<p class="_icon-printer"></p>
+									<p class="_icon-more"></p>
+								</div>
+								<div class="transaction">
+									<div class="transactions__grid">
+										<p class="_icon-moneylist"></p>
+										<h1 class="transactions-grid__title">Amount</h1>
+										<p class="transactions-grid-sub-title">12,658$</p>
+									</div>
+									<p class="transactions__time">5 min ago</p>
+									<p class="_icon-printer"></p>
+									<p class="_icon-more"></p>
+								</div>
+								<div class="transaction">
+									<div class="transactions__grid">
+										<p class="_icon-moneylist"></p>
+										<h1 class="transactions-grid__title">Amount</h1>
+										<p class="transactions-grid-sub-title">12,658$</p>
+									</div>
+									<p class="transactions__time">5 min ago</p>
+									<p class="_icon-printer"></p>
+									<p class="_icon-more"></p>
+								</div>
+							</div>
+						</div>
+						<div class="transactions-page__slide swiper-slide">
+							<div class="swiper-slide__transaction transactions">
+								<div class="transaction">
+									<div class="transactions__grid">
+										<p class="_icon-moneylist"></p>
+										<h1 class="transactions-grid__title">Amount</h1>
+										<p class="transactions-grid-sub-title">12,658$</p>
+									</div>
+									<p class="transactions__time">5 min ago</p>
+									<p class="_icon-printer"></p>
+									<p class="_icon-more"></p>
+								</div>
+								<div class="transaction">
+									<div class="transactions__grid">
+										<p class="_icon-moneylist"></p>
+										<h1 class="transactions-grid__title">Amount</h1>
+										<p class="transactions-grid-sub-title">12,658$</p>
+									</div>
+									<p class="transactions__time">5 min ago</p>
+									<p class="_icon-printer"></p>
+									<p class="_icon-more"></p>
+								</div>
+								<div class="transaction">
+									<div class="transactions__grid">
+										<p class="_icon-moneylist"></p>
+										<h1 class="transactions-grid__title">Amount</h1>
+										<p class="transactions-grid-sub-title">12,658$</p>
+									</div>
+									<p class="transactions__time">5 min ago</p>
+									<p class="_icon-printer"></p>
+									<p class="_icon-more"></p>
+								</div>
+								<div class="transaction">
+									<div class="transactions__grid">
+										<p class="_icon-moneylist"></p>
+										<h1 class="transactions-grid__title">Amount</h1>
+										<p class="transactions-grid-sub-title">12,658$</p>
+									</div>
+									<p class="transactions__time">5 min ago</p>
+									<p class="_icon-printer"></p>
+									<p class="_icon-more"></p>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+					<!-- Если нужна пагинация -->
+					<div class="transactions-page__actions">
+						<!-- Если нужна навигация (влево/вправо) -->
+						<button type="button" class="swiper-button-prev"></button>
+						<div class="swiper-pagination"></div>
+						<button type="button" class="swiper-button-next"></button>
+					</div>
+				</div>
+				<div class="transactions-page__chart">
+					<canvas id="myChart"></canvas>
+				</div>
+			</div>
+			<div class="page__balance balance-page">
+				<div class="balance-page__card card">
+					<div class="card__front">
+						<h1 class="card__title">Balance</h1>
+						<p class="card__balance">$ 4,929</p>
+						<p class="card__number">5375 4111 1456 5541</p>
+						<div class="card__date">
+							<p class="card__date-title">Valid Thru</p>
+							<p class="card__date-date">03/23</p>
+						</div>
+						<div class="card__name">
+							<p class="card__name-title">Name</p>
+							<p class="card__name-name">Jhon Doe</p>
+						</div>
+					</div>
+					<div class="card__back">
+						<p class="card__back__cvv">CVV 009</p>
+					</div>
+				</div>
+				<div class="balance-page__details details-page">
+					<h1 class="details-page__title">Balance Details</h1>
+					<p class="details-page__sub-title">Total Balance</p>
+					<p class="details-page__sub-sub-title">$221,478</p>
+					<div class="details-page__grid details-grid">
+						<div class="details-page__area">
+							<h1 class="details-grid__title">Last Month</h1>
+							<p class="details-grid__sub-title">$ 14,849</p>
+						</div>
+						<div class="details-page__area">
+							<h1 class="details-grid__title">Last Month</h1>
+							<p class="details-grid__sub-title">$ 14,849</p>
+						</div>
+						<div class="details-page__area">
+							<h1 class="details-grid__title">Last Month</h1>
+							<p class="details-grid__sub-title">$ 14,849</p>
+						</div>
+						<div class="details-page__area">
+							<h1 class="details-grid__title">Last Month</h1>
+							<p class="details-grid__sub-title">$ 14,849</p>
+						</div>
+					</div>
+				</div>
+				<div class="balance-page__chart chart-page">
+					<canvas id="myChart1"></canvas>
+				</div>
+				<div class="balance-page__transactions page-balans">
+					<h1 class="page-balans__title">Transactions</h1>
+					<p class="page-balans__sub-title">5,793</p>
+					<img src="img/graphics.svg" alt="" class="page-balans__img">
+				</div>
+			</div>
+
+
+
+		</main>
+
+
+	</div>
+	<!-- <div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">Закрыть</button>
+			<div class="popup__text">
+				Text
+			</div>
+		</div>
+	</div>
+</div> -->
+	<script src="js/app.js"></script>
+	<script>
+		function firstChart() {
+
+			const ctx = document.getElementById('myChart').getContext('2d');
+			const labels = [
+				'January',
+				'February',
+				'March',
+			];
+			const data = {
+				labels: labels,
+				datasets: [{
+					label: 'My First Dataset',
+					data: [65, 59, 80, 81, 56, 55, 40, 11, 17],
+					backgroundColor: [
+						'rgba(255, 99, 132, 0.2)',
+						'rgba(255, 159, 64, 0.2)',
+						'rgba(255, 205, 86, 0.2)',
+						'rgba(75, 192, 192, 0.2)',
+						'rgba(54, 162, 235, 0.2)',
+						'rgba(153, 102, 255, 0.2)',
+						'rgba(201, 203, 207, 0.2)'
+					],
+					borderColor: [
+						'rgb(255, 99, 132)',
+						'rgb(255, 159, 64)',
+						'rgb(255, 205, 86)',
+						'rgb(75, 192, 192)',
+						'rgb(54, 162, 235)',
+						'rgb(153, 102, 255)',
+						'rgb(201, 203, 207)'
+					],
+					borderWidth: 1
+				}]
+			};
+			const config = {
+				type: 'bar',
+				data: data,
+				options: {
+					scales: {
+						y: {
+							beginAtZero: true
+						}
+					}
+				},
+			};
+			const myChart = new Chart(
+				document.getElementById('myChart'),
+				config
+			);
+		}
+		firstChart();
+
+		function secondChart() {
+
+			const ctx1 = document.getElementById('myChart1').getContext('2d');
+			const labels = [
+				'January',
+				'February',
+				'March',
+			];
+			const data = {
+				labels: labels,
+				datasets: [{
+					label: 'My First Dataset',
+					data: [65, 59, 80, 81, 56, 55, 40, 11, 17],
+					backgroundColor: [
+						'rgba(255, 99, 132, 0.2)',
+						'rgba(255, 159, 64, 0.2)',
+						'rgba(255, 205, 86, 0.2)',
+						'rgba(75, 192, 192, 0.2)',
+						'rgba(54, 162, 235, 0.2)',
+						'rgba(153, 102, 255, 0.2)',
+						'rgba(201, 203, 207, 0.2)'
+					],
+					borderColor: [
+						'rgb(255, 99, 132)',
+						'rgb(255, 159, 64)',
+						'rgb(255, 205, 86)',
+						'rgb(75, 192, 192)',
+						'rgb(54, 162, 235)',
+						'rgb(153, 102, 255)',
+						'rgb(201, 203, 207)'
+					],
+					borderWidth: 1
+				}]
+			};
+			const config = {
+				type: 'bar',
+				data: data,
+				options: {
+					scales: {
+						y: {
+							beginAtZero: true
+						}
+					}
+				},
+			};
+			const myChart1 = new Chart(
+				document.getElementById('myChart1'),
+				config
+			);
+		}
+		secondChart();
+	</script>
+
+</body>
+
+</html>
